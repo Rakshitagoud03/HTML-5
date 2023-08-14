@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dialog{
+            background-color:teal;
+            color:white;
+            margin:20px;
+          /*  display: block; */    /*as by default display:none in dialog tag so this styleele used*/
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h3>DETAIL TAG</h3>
+        <p>this tag is used to specify addditional detailson webpage</p>
+    </center>
+    <hr>
+    <center>
+        <h3>summary tag</h3>    <!--in order to avoid confusion in detail tag this is used for summary of detail tag-->
+        <p>caption or legend for the content of a details element</p>
+        <hr>
+
+    </center>
+    <details>
+        <summary>HTML</summary>
+        <h1>HTML</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam explicabo nulla omnis cum placeat reiciendis assumenda iure, voluptates eligendi officiis quis blanditiis deleniti quia accusamus maiores nemo deserunt tempora esse?</p>
+    </details>
+
+    <details>
+        <summary>CSS</summary>
+        <h3>CSS</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi praesentium molestias quasi sed, necessitatibus amet laudantium nisi aspernatur beatae quia corporis quaerat asperiores unde omnis laborum accusantium. Dolores, tenetur non?</p>
+    </details>
+
+    <details>
+        <summary>JS</summary>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta iure voluptatibus commodi ipsa, nesciunt vero at illo quas, dolore qui vitae sit sed nihil asperiores delectus, corrupti temporibus dolorem perspiciatis.</p>
+    </details>
+
+    <center>
+        <h3>TIME TAG</h3>
+        <p>used to define data and time.displays time value in a 24hr clock or a precise data in gregorian calender</p>
+    </center>
+    <hr>
+    <p>Lorem ipsum, dolor sit 5:30pm consectetur adipisicing elit. Voluptatem sint, repellat velit vitae aliquam officia, provident modi quasi quam quos repudiandae obcaecati ratione odio expedita culpa molestiae delectus consectetur aut!</p>
+    <p>opens at <time>5:30</time>PM</p>
+    <!--here there is no diff for the time specified in 2 cases those case are known as semantic elements where no diff found but used only to describe elements-->
+    <hr>
+    <center>
+        <h3>DIALOG</h3>
+        <p><b>used to create a new popup dialogue on webpage</b></p>
+        <dialog id="dialogID">
+            <button type="button" id="closeButton">&times;</button> <!--&times=unicode property from UTF-8-->
+            <h1>FULLSTACK</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo soluta, iusto sequi, reiciendis dicta quisquam ea deleniti doloremque aperiam tempora cupiditate iure, ab inventore blanditiis natus quasi exercitationem repellendus nulla.</p>
+        </dialog>
+        <button type="button" id="openButton">open dialog</button>
+        <script>
+            document.getElementById("openButton").onclick=function(){
+                document.getElementById("dialogID").show();
+            };
+            document.getElementById("closeButton").onclick=function(){
+                document.getElementById("dialogID").close();
+            };
+        </script>
+    </center>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+</head>
+<body>
+    <center>DATALIST TAG
+        <p>used to provide autocomplete data used previously</p>
+    </center>
+    <hr>
+    <h2>this is select option tag</h2>
+    <select name="" id="">
+        <option value="">RAHUL DRAVID</option>
+        <option value="">SACHIN</option>
+        <option value="">VIRAT</option>
+        <option value="">KAPIL</option>
+        <option value="">DAVID</option>
+        <option value="">YUSUF</option>
+    </select>
+    <hr>
+    <h2>DATALIST TAG</h2>
+    <!--this depends on option tag-->
+    <!--we can type and search also here-->
+    <input type="text" placeholder="palyers" name="players" id="players" list="india">
+    <datalist id="india">
+        <option>RAHUL DRAVID</option>
+        <option>DAVID</option>
+        <option>VIRAT</option>
+        <option>IRFAN</option>
+        <option value="">YUSUF</option> <!--this is error since no value for value attribute-->
+        <option value="bepractical">YUSUF</option>
+        <option value="dhoni"></option>
+        <option value="ABD"></option>
+        <option value="rohit"></option>
+        <option value="hardik">
+        <!--not getting proper response so use input tag-->
+        <!--in this option menu we can serach in text box using first or last words-->
+
+    </datalist>
+</body>
+</html>
